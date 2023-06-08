@@ -41,15 +41,15 @@ namespace RoadBook.CsharpBasic.Chapter04.Examples
                         Console.WriteLine("출금할 금액을 알려주세요");
                         OutMoney = Convert.ToInt32(Console.ReadLine());
 
-                    if (OutMoney > (TotalInMoney-TotalOutMoney))
-                    {
+                        if (OutMoney > (TotalInMoney-TotalOutMoney))
+                        {
                         Console.WriteLine("잔액이 부족합니다");
-                    }
-                    else
-                    {
+                        }
+                        else
+                        {
                         TotalOutMoney += OutMoney;
                         Console.WriteLine("출금되었습니다.");
-                    }
+                        }
                     }
                     if(x>=4 || x<0)
                      {
