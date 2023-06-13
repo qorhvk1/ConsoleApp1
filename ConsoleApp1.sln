@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter04", "RoadBook.CsharpBasic.Chatper04\RoadBook.CsharpBasic.Chapter04.csproj", "{F76669C8-81E3-4EC2-AA80-B6570BE4A4DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter05", "RoadBook.CsharpBasic.Chatper05\RoadBook.CsharpBasic.Chapter05.csproj", "{414688BF-B151-4796-AB9E-58A8E07ADDD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F76669C8-81E3-4EC2-AA80-B6570BE4A4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F76669C8-81E3-4EC2-AA80-B6570BE4A4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F76669C8-81E3-4EC2-AA80-B6570BE4A4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414688BF-B151-4796-AB9E-58A8E07ADDD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414688BF-B151-4796-AB9E-58A8E07ADDD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414688BF-B151-4796-AB9E-58A8E07ADDD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414688BF-B151-4796-AB9E-58A8E07ADDD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
