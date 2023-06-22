@@ -19,27 +19,49 @@ namespace RoadBook.CsharpBasic.Chapter06.Examples
             hst.Add("america", "미국");
             hst.Add("spain", "스페인");
 
-            Console.WriteLine("단어를 입력하세요 :");
-            string word = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("단어를 입력하세요 (Q:종료) :");
+                string word = Console.ReadLine().ToLower();
 
-            if (hst.Contains(word))
-            {
-                Console.WriteLine("{0} : {1}", word, hst[word]);
-                Console.WriteLine("삭제 하시겠습니까? (YES/NO)");
-                string dlt = Console.ReadLine();
-                if(dlt == "YES")
+                if(word == "q")
                 {
-                    hst.Remove(word);
+                    break;
                 }
-                
+
+                if (hst.Contains(word))
+                {
+                    Console.WriteLine("{0} : {1}", word, hst[word]);
+
+                    Console.WriteLine("단어를 삭제할까요? (Y:삭제 / N:미삭제) :");
+                    string deleteYN = Console.ReadLine();
+
+                    if (deleteYN.ToUpper() == "Y")
+                    {
+                        hst.Remove(word);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("단어 검색 결과가 없습니다 추가할까요?" +
+                        "(Y:추가 / N: 미추가) :"
+                        );
+                    string addYN = Console.ReadLine();
+
+                    if (addYN.ToUpper() == "Y")
+                    {
+                        Console.Write("뜻을 입력하세요 :");
+                        string value = Console.ReadLine();
+
+                        hst.Add(word, value);
+                    }
+                }
+                }
             }
-            else
-            {
-                Console.WriteLine("단어 검색 결과가 없습니다");
-                hst.Add(word, "");
-                Console.WriteLine("단어가 추가 되었습니다");
-                Console.WriteLine("{0} : {1}", word, hst[word]);
-            }
+
         }
     }
-}
+
+        
+    
+
