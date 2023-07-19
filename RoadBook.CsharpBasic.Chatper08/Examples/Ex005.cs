@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace RoadBook.CsharpBasic.Chatper08.Examples
+namespace RoadBook.CsharpBasic.Chapter08.Examples
 {
     internal class Ex005
     {
