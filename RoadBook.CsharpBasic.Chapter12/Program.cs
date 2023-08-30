@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace RoadBook.CsharpBasic.Chapter12.Examples
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Examples.Ex001 ex001 = new Examples.Ex001();
+            ex001.Run();
+        }
+    }
+}
+

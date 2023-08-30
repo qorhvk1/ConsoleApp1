@@ -12,6 +12,7 @@ using Lucene.Net.Documents;
 using Lucene.Net.Analysis.Standard;
 using Lucene.Net.QueryParsers;
 using System.Data;
+using RoadBook.CsharpBasic.Chapter12.Examples.Model;
 
 namespace RoadBook.CsharpBasic.Chapter12.Examples
 {
@@ -36,8 +37,8 @@ namespace RoadBook.CsharpBasic.Chapter12.Examples
 
         private void Crawl()
         {
-            System.Collections.Generic.List<Model.Book> bookList =
-                new System.Collections.Generic.List<Model.Book>()
+            System.Collections.Generic.List<Book> bookList =
+                new System.Collections.Generic.List<Book>()
                 {
                     new Model.Book { Id = "P001", Title = "Csharp Programming Basic", Description = "C# 초급자들을 위한 기본서", Price = 35000 },
                 new Model.Book { Id = "P002", Title = "Csharp Programming Advance", Description = "C# 고급자들을 위한 고급기술 서적", Price = 40000 },

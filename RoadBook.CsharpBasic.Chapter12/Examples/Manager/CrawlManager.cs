@@ -7,7 +7,7 @@ using RoadBook.CsharpBasic.Chapter10.Manager;
 using RoadBook.CsharpBasic.Chapter10.Model;
 using System.Data;
 
-namespace RoadBook.CsharpBasic.Chapter12.Manager
+namespace RoadBook.CsharpBasic.Chapter12.Examples.Manager
 {
     public class CrawlManager
     {

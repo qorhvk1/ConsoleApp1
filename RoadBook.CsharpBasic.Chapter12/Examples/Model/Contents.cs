@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RoadBook.CsharpBasic.Chapter12.Model
+namespace RoadBook.CsharpBasic.Chapter12.Examples.Model
 {
     public class Contents
     {

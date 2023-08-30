@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace RoadBook.CsharpBasic.Chapter12.Manager
+namespace RoadBook.CsharpBasic.Chapter12.Examples.Manager
 {
     public class XmlManager
     {
-        public enum USE_TYPE {WRITE,READ};
+        public enum USE_TYPE { WRITE, READ };
 
         private XDocument _xDoc;
 
         private static char directorySeparator =
-            System.IO.Path.DirectorySeparatorChar;
+            Path.DirectorySeparatorChar;
         private static string crawlDirectoryPath =
             Environment.CurrentDirectory + directorySeparator + "crawled";
 
@@ -23,10 +23,10 @@ namespace RoadBook.CsharpBasic.Chapter12.Manager
             switch (useType)
             {
                 case USE_TYPE.WRITE:
-                    if (System.IO.Directory.Exists(crawlDirectoryPath))
+                    if (Directory.Exists(crawlDirectoryPath))
                     {
-                        System.IO.DirectoryInfo di=
-                            new System.IO.DirectoryInfo(crawlDirectoryPath);
+                        DirectoryInfo di =
+                            new DirectoryInfo(crawlDirectoryPath);
                         foreach (var file in di.GetFiles())
                         {
                             file.MoveTo(crawlDirectoryPath + directorySeparator +
@@ -35,23 +35,23 @@ namespace RoadBook.CsharpBasic.Chapter12.Manager
                     }
                     else
                     {
-                        System.IO.Directory.CreateDirectory(crawlDirectoryPath);
-                        System.IO.Directory.CreateDirectory
+                        Directory.CreateDirectory(crawlDirectoryPath);
+                        Directory.CreateDirectory
                             (crawlDirectoryPath + directorySeparator + "backup");
                     }
 
                     _xDoc = new XDocument(
-                        new XDeclaration("1.0","utf-8",null),
+                        new XDeclaration("1.0", "utf-8", null),
                         new XElement("result"));
                     break;
                 case USE_TYPE.READ:
-                    if (System.IO.Directory.Exists(crawlDirectoryPath))
+                    if (Directory.Exists(crawlDirectoryPath))
                     {
-                        System.IO.DirectoryInfo di =
-                            new System.IO.DirectoryInfo(crawlDirectoryPath);
-                        System.IO.FileInfo[] fi = di.GetFiles();
+                        DirectoryInfo di =
+                            new DirectoryInfo(crawlDirectoryPath);
+                        FileInfo[] fi = di.GetFiles();
 
-                        if(fi.Length > 0)
+                        if (fi.Length > 0)
                         {
                             _xDoc = XDocument.Load(fi[0].FullName);
                         }
@@ -80,8 +80,8 @@ namespace RoadBook.CsharpBasic.Chapter12.Manager
 
         public List<Model.Contents> Read()
         {
-            return _xDoc.Descendants("row").Select(s=> new Model.Contents()
-                {
+            return _xDoc.Descendants("row").Select(s => new Model.Contents()
+            {
                 Idx = Convert.ToInt32(s.Element("idx").Value),
                 Title = s.Element("title").Value,
                 Summary = s.Element("summary").Value,

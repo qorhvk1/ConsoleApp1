@@ -15,4 +15,8 @@
     <ProjectReference Include="..\RoadBook.CsharpBasic.Chapter10\RoadBook.CsharpBasic.Chapter10.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+
 </Project>
