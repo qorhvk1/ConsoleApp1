@@ -25,11 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter10", "RoadBook.CsharpBasic.Chapter10\RoadBook.CsharpBasic.Chapter10.csproj", "{79E3C0DB-B967-4284-BFED-51CA65C8410B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter10.Web", "RoadBook.CsharpBasic.Chapter10.Web\RoadBook.CsharpBasic.Chapter10.Web.csproj", "{3E8CDD74-53F6-442A-AA1E-5EA117406915}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter11.Winform", "RoadBook.CsharpBasic.Chapter11.Winform\RoadBook.CsharpBasic.Chapter11.Winform.csproj", "{43633FE2-05C9-4402-A913-189FE49E63AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter12", "RoadBook.CsharpBasic.Chapter12\RoadBook.CsharpBasic.Chapter12.csproj", "{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter12", "RoadBook.CsharpBasic.Chapter12\RoadBook.CsharpBasic.Chapter12.csproj", "{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,10 +79,6 @@ Global
 		{79E3C0DB-B967-4284-BFED-51CA65C8410B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79E3C0DB-B967-4284-BFED-51CA65C8410B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79E3C0DB-B967-4284-BFED-51CA65C8410B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E8CDD74-53F6-442A-AA1E-5EA117406915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E8CDD74-53F6-442A-AA1E-5EA117406915}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E8CDD74-53F6-442A-AA1E-5EA117406915}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E8CDD74-53F6-442A-AA1E-5EA117406915}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43633FE2-05C9-4402-A913-189FE49E63AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{43633FE2-05C9-4402-A913-189FE49E63AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43633FE2-05C9-4402-A913-189FE49E63AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
