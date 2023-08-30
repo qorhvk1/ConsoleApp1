@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoadBook.CsharpBasic.Chapter12", "RoadBook.CsharpBasic.Chapter12\RoadBook.CsharpBasic.Chapter12.csproj", "{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoadBook.CsharpBasic.Chapter10.Web2", "RoadBook.CsharpBasic.Chapter10.Web2\RoadBook.CsharpBasic.Chapter10.Web2.csproj", "{7391DDCD-0BB5-4C1A-8DDF-B314722D989D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA0A5F7-8E65-4D48-956F-E30DEF4DE965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7391DDCD-0BB5-4C1A-8DDF-B314722D989D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7391DDCD-0BB5-4C1A-8DDF-B314722D989D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7391DDCD-0BB5-4C1A-8DDF-B314722D989D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7391DDCD-0BB5-4C1A-8DDF-B314722D989D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
