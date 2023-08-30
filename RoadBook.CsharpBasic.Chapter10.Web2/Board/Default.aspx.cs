@@ -26,7 +26,7 @@ namespace RoadBook.CsharpBasic.Chapter10.Web2.Board
 
             DataTable dt = ms.Select("SELECT IDX, TITLE, SUMMARY, CREATE_DT," +
                 "CREATE_USER_NM,TAGS,LIKE_CNT,CATEGORY_IDX FROM TB_CONTENTS");
-            GridView1.DataSource = dtt;
+            GridView1.DataSource = dt;
             Grideview1.DataBind();
         }
     }
